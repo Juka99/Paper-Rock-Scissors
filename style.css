@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+    src: url('frozen.ttf');
+    font-family: froz;
+}
+
+body{
+    background-color: #141414;
+    font-family: froz;
+    width: 100%;
+}
+
+h1{
+    color: rgb(245, 245, 245);
+    text-align: center;
+    font-size: 4em;
+}
+
+h1 span:first-child{
+    color: rgb(221, 221, 221);
+}
+
+h1 span:nth-child(2){
+    padding: 0px 5%;
+}
+
+h1 span:last-child{
+    color: rgb(127, 206, 63);
+}
+
+.drzac{
+    width: 70%;
+    margin: 4% auto 0% auto;;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8% 0% 5% 0%;
+}
+
+.score0{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score p{
+    font-size: 4em;
+    color: whitesmoke;
+}
+
+.score h2:first-child{
+    font-size: 3em;
+    color: rgb(127, 206, 63);
+}
+
+.score h2:last-child{
+    font-size: 3em;
+    color: rgb(214, 35, 35);
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8%;
+    font-size: 3em;
+    color: whitesmoke;
+}
+
+.status{
+    text-align: center;
+    padding: 5% 0%;
+    font-size: 3em;
+    color: #141414;
+}
+
+.blokovi{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blokovi a{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(112, 112, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid whitesmoke;
+    transition: .5s;
+}
+
+.blokovi a:hover{
+    transform: scale(1.1);
+    background-color: #919191;
+}
+
+.blokovi .m i{
+    color: rgb(127, 206, 63);
+    font-size: 2em;
+}
+
+.blokovi .k .roc{
+    color: rgb(221, 221, 221);
+    font-size: 2em;
+}
+
+.blokovi .p i{
+    color: rgb(245, 245, 245);
+    font-size: 2em;
+}
+
+h3{
+    padding-top: 5%;
+    text-align: center;
+    font-size: 3em;
+}
+
+h3 .lose{
+    color: red;
+}
+
+h3 .win{
+    color: rgb(67, 192, 67);
+}
+
+@media screen and (max-width: 1400px){
+    .drzac{
+        width: 90%;
+    }
+
+    .stats{
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .stats{
+        font-size: 2.3em;
+    }
+
+    .score0{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .score0{
+        width: 85%;
+    }
+
+    .stats{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 3em;
+    }
+    .score0{
+        width: 95%;
+    }
+
+    .score h2:first-child{
+        font-size: 2.6em;
+    }
+
+    .score h2:last-child{
+        font-size: 2.6em;
+    }
+
+    .score p{
+        font-size: 3em;
+    }
+
+    .stats{
+        text-align: center;
+    }
+
+    .status{
+        font-size: 2em;
+        padding: 10% 0%;
+    }
+
+    h3{
+        padding-top: 15%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    h1{
+        font-size: 2.3em;
+    }
+
+    .drzac{
+        width: 98%;
+        margin-top: 15%;
+    }
+
+    .score h2:first-child{
+        font-size: 2.3em;
+    }
+
+    .score h2:last-child{
+        font-size: 2.3em;
+    }
+
+    .score p{
+        font-size: 2.6em;
+    }
+
+    .stats{
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 1.5em;
+    }
+
+    .score h2:first-child{
+        font-size: 1.8em;
+    }
+
+    .score h2:last-child{
+        font-size: 1.8em;
+    }
+
+    .score p{
+        font-size: 2em;
+    }
+
+    .stats{
+        font-size: 1.1em;
+    }
+
+    .blokovi a{
+        width: 70px;
+        height: 70px;
+    }
+}
